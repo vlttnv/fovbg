@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js"
+        ]
+      }
+    ]
+  }
+}
